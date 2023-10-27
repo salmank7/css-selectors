@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-SELECTORS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .internal {
+        background: red;
+        color: white;
+      }
+      .internal-2 {
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline CSS -->
+    <div style="border: 2px solid black">
+      <h1>Inline Css</h1>
+      <h1 style="color: red">This Element is targeted from inline css</h1>
+      <p style="color: violet">This Element is targeted from inline css</p>
+    </div>
+
+    <!-- Internal CSS -->
+    <div style="border: 2px solid black">
+      <h1>Internal Css</h1>
+      <h1 class="internal">This Element is targeted from internal Css</h1>
+      <h1 class="internal-2">This Element is targeted from internal Css</h1>
+    </div>
+
+    <!-- External CSS with Selectors -->
+    <div class="container">
+      <h1>External Css | Css Selectors</h1>
+      <h2 class="child">This is Targeted from external css</h2>
+      <h1 class="childTwo">This is Targeted from external css</h1>
+      <h4 id="unique">This Element is targeted with id</h4>
+      <div class="parent">
+        <h1>This is child of Parent</h1>
+        <h1>This is child of Parent</h1>
+        <h1>This is child of Parent</h1>
+        <h1>This is child of Parent</h1>
+        <div class="parent-child">
+          <h1>This is child of Parent-Child</h1>
+          <h1>This is child of Parent-Child</h1>
+          <h1>This is child of Parent-Child</h1>
+          <h1>This is child of Parent-Child</h1>
+        </div>
+      </div>
+      <h1 class="one">This is ELement with Class .one</h1>
+      <h1 class="two">
+        Two directly follow One Thats why this Elements will be Selected <br />
+        because i have used .one + .two
+      </h1>
+    </div>
+  </body>
+</html>

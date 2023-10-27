@@ -1,0 +1,42 @@
+/* Universal Selector | Target all Elements */
+* {
+  color: black;
+}
+
+/* Element Selector | will select all h2 elements in html */
+h2 {
+  color: cyan;
+}
+
+/* Class Selector | can select multiple elements with class */
+.container {
+  background-color: brown;
+}
+
+/* child Selector */
+
+.container .child {
+  background-color: grey;
+}
+
+/* id Selector | will only select first element having id of unique. multiple ids not allowed in single html file */
+
+#unique {
+  background-color: slateblue;
+  color: white;
+}
+
+/* Descendent Selector | will select all h1 elements inside .parent div even grandchild's*/
+.parent h1 {
+  color: burlywood;
+}
+/* Child Selector | will only select children but not grand children  */
+.parent > h1 {
+  color: cyan;
+}
+
+/* Adjacent Selector:- Selects an element that is immediately preceded by a specific element (e.g., h2 + p selects p elements that directly follow h2 elements). */
+
+.one + .two {
+  color: lightblue;
+}
